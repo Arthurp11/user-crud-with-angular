@@ -1,0 +1,28 @@
+
+<div class="cadastro-container">
+    <table class="table-users">
+        <thead class="table-header">
+            <tr>
+                <td>Listagem de usuários</td>
+            </tr>
+        </thead>
+        <tbody class="table-body">
+            <tr class="content-header">
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Senha</th>
+                <th>Descrição</th>
+            </tr>
+
+            @for (user of users; track user) {
+                <tr>
+                    <td>{{ user.nome }}</td>
+                    <td>{{ user.email }}</td>
+                    <td>{{ user.senha }}</td>
+                    <td>{{ user.descricao }}</td>
+                </tr>
+            }
+            
+        </tbody>
+    </table>
+</div>

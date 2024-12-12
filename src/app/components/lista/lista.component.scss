@@ -1,0 +1,41 @@
+.cadastro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .table-users {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    min-height: 300px;
+    border-radius: 10px;
+  }
+
+  tbody{
+    text-align: left;
+    height: 50px;
+  }
+
+  .table-header td {
+    font-weight: bold;
+    font-size: larger;
+  }
+
+  .table-body td {
+    height: 10px;
+    vertical-align: top;
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  .table-body th {
+    height: 10px;
+    vertical-align: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
