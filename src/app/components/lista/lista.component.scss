@@ -17,11 +17,15 @@
   .table-users {
     max-width: 600px;
     border-collapse: collapse;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
   .table-header td {
     font-weight: bold;
     font-size: larger;
+    width: 100%;
   }
 
   tbody{
@@ -30,7 +34,6 @@
 
   .content-header th{
     border: 1px solid black;
-    
     height: 30px;
     vertical-align: bottom;
   }
@@ -39,8 +42,15 @@
     height: 10px;
     vertical-align: top;
     border-bottom: 1px solid black;
+    padding: 5px;
   }
 
   .empty-content {
     text-align: center;
+  }
+
+  .icon {
+    width: 1%;
+    text-align: left;
+    padding: 0;
   }

@@ -9,18 +9,22 @@
             </thead>
             <tbody class="table-body">
                 <tr class="content-header">
+                    <th></th>
                     <th>Nome</th>
                     <th>Email</th>
                     <th>Senha</th>
                     <th>Descrição</th>
+                    <th></th>
                 </tr>
 
                 @for (user of users; track user) {
                     <tr class="content-body">
+                        <td class="icon"><button type="button" (click)="btnEdit(user.id)"><fa-icon [icon]="faPen"></fa-icon></button></td>
                         <td>{{ user.nome }}</td>
                         <td>{{ user.email }}</td>
                         <td>{{ user.senha }}</td>
                         <td>{{ user.descricao }}</td>
+                        <td class="icon"><button type="button" (click)="btnDelete(user)"><fa-icon [icon]="faTrash"></fa-icon></button></td>
                     </tr>
                 }
                 @empty {
