@@ -1,24 +1,22 @@
-.cadastro-container {
+  .outside-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
   }
-  
-  .table-users {
+
+  .inside-container {
     background-color: white;
-    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 600px;
-    min-height: 300px;
+    padding: 10px;
     border-radius: 10px;
+    border-collapse: collapse;
   }
-
-  tbody{
-    text-align: left;
-    height: 50px;
+  
+  .table-users {
+    max-width: 600px;
+    border-collapse: collapse;
   }
 
   .table-header td {
@@ -26,16 +24,23 @@
     font-size: larger;
   }
 
-  .table-body td {
-    height: 10px;
-    vertical-align: top;
-    border: 1px solid black;
-    border-collapse: collapse;
+  tbody{
+    text-align: left;
   }
 
-  .table-body th {
-    height: 10px;
-    vertical-align: auto;
+  .content-header th{
     border: 1px solid black;
-    border-collapse: collapse;
+    
+    height: 30px;
+    vertical-align: bottom;
+  }
+
+  .content-body td {
+    height: 10px;
+    vertical-align: top;
+    border-bottom: 1px solid black;
+  }
+
+  .empty-content {
+    text-align: center;
   }
