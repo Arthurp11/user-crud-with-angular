@@ -14,6 +14,7 @@ export class ListaComponent implements OnInit{
 
   constructor(private userService: UserService){}
 
+  //ao iniciar carrega var user com dados
   ngOnInit(): void{
     this.userService.getUsers().subscribe((data) => {
       this.users = data;
