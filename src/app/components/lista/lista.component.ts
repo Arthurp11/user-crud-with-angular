@@ -37,7 +37,7 @@ export class ListaComponent implements OnInit{
   btnDelete(user: User) {
     console.log(user);
     this.userService.delete(user).subscribe(() =>
-    this.users = this.users.filter((u) => u.id == user.id))
+    this.users = this.users.filter((u) => u.id != user.id))
 
     this.loadUsers();
   }

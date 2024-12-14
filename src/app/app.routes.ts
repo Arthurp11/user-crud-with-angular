@@ -5,7 +5,7 @@ import { EdicaoComponent } from './components/edicao/edicao.component';
 import { HomeComponent } from './components/home/home.component';
 
 export const routes: Routes = [
-    { path: 'home', component: HomeComponent},
+    { path: '', component: HomeComponent},
     { path: 'user_create', component: CadastroComponent},
     { path: 'users', component: ListaComponent},
     { path: 'user_edit/:id', component: EdicaoComponent}
