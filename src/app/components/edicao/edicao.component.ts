@@ -24,8 +24,7 @@ export class EdicaoComponent implements OnInit{
   constructor(private route: ActivatedRoute, private userService: UserService) { }
 
   ngOnInit(): void {
-    this.id = this.route.snapshot.paramMap.get('id')!;
-    this.user.id = parseInt(this.id);
+    this.user.id = +this.route.snapshot.paramMap.get('id')!;
     this.userService.getUser(this.user).subscribe((data) => {
       this.user = data;
     });
